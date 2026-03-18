@@ -1,0 +1,391 @@
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:52:47 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:52:47 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: correlation ===
+2026-03-13 21:52:47 [INFO] pipeline: Matriz de correlación calculada (pearson): (12, 12)
+2026-03-13 21:52:47 [INFO] pipeline: Correlaciones significativas con 'productivity_score': 2
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'correlation' completada en 0.00s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:52:47 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'linear_regression': R²=0.0034, RMSE=22.5760, MAE=19.7468
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'random_forest': R²=-0.1328, RMSE=24.0693, MAE=21.1405
+2026-03-13 21:52:47 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0034
+2026-03-13 21:52:47 [INFO] pipeline: Top 3 features: ['sleep_hours', 'youtube_hours', 'gaming_hours']
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'linear_regression': R²=0.0034, RMSE=22.5760, MAE=19.7468
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'random_forest': R²=-0.1328, RMSE=24.0693, MAE=21.1405
+2026-03-13 21:52:47 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0034
+2026-03-13 21:52:47 [INFO] pipeline: Top 3 features: ['sleep_hours', 'youtube_hours', 'gaming_hours']
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: recommend ===
+2026-03-13 21:52:47 [ERROR] pipeline: === Etapa 'recommend' falló en 0.00s: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- productivity_score
+ ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'linear_regression': R²=0.0034, RMSE=22.5760, MAE=19.7468
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'random_forest': R²=-0.1328, RMSE=24.0693, MAE=21.1405
+2026-03-13 21:52:47 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0034
+2026-03-13 21:52:47 [INFO] pipeline: Top 3 features: ['sleep_hours', 'youtube_hours', 'gaming_hours']
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: export ===
+2026-03-13 21:52:47 [INFO] pipeline: Dataset exportado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-11\test_stage_export0\processed_data.csv (SHA256: ec792f7bb1158c84...)
+2026-03-13 21:52:47 [INFO] pipeline: Resultados exportados: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-11\test_stage_export0\results.json
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'export' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features', 'correlation', 'train', 'recommend', 'visualize', 'export']
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:52:47 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:52:47 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:52:47 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: correlation ===
+2026-03-13 21:52:47 [INFO] pipeline: Matriz de correlación calculada (pearson): (16, 16)
+2026-03-13 21:52:47 [INFO] pipeline: Correlaciones significativas con 'productivity_score': 2
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'correlation' completada en 0.00s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'linear_regression': R²=0.0572, RMSE=1.1612, MAE=1.0083
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'random_forest': R²=-0.2566, RMSE=1.3406, MAE=1.1790
+2026-03-13 21:52:47 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0572
+2026-03-13 21:52:47 [INFO] pipeline: Top 3 features: ['sleep_hours', 'phone_usage_hours', 'youtube_hours']
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: recommend ===
+2026-03-13 21:52:47 [ERROR] pipeline: === Etapa 'recommend' falló en 0.00s: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- productivity_score
+ ===
+2026-03-13 21:52:47 [ERROR] pipeline: Pipeline falló: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- productivity_score
+Traceback (most recent call last):
+  File "C:\Users\alexa\tf-gpu-11.8\student-analysis\pipeline.py", line 397, in run_pipeline
+    artifacts["recommendations"] = stage_recommend(df_input, model, importance_df, config, logger)
+  File "C:\Users\alexa\tf-gpu-11.8\student-analysis\pipeline.py", line 242, in stage_recommend
+    recommendations = engine.generate_recommendations(sample_student, n_recommendations=n_recs)
+  File "C:\Users\alexa\tf-gpu-11.8\student-analysis\src\recommendations\generator.py", line 248, in generate_recommendations
+    rec["estimated_impact"] = self.estimate_impact(student_data, rec)
+  File "C:\Users\alexa\tf-gpu-11.8\student-analysis\src\recommendations\generator.py", line 283, in estimate_impact
+    current_score = float(self.model.predict(student_df)[0])
+  File "C:\Users\alexa\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\linear_model\_base.py", line 298, in predict
+    return self._decision_function(X)
+  File "C:\Users\alexa\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\linear_model\_base.py", line 277, in _decision_function
+    X = validate_data(self, X, accept_sparse=["csr", "csc", "coo"], reset=False)
+  File "C:\Users\alexa\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\validation.py", line 2929, in validate_data
+    _check_feature_names(_estimator, X, reset=reset)
+  File "C:\Users\alexa\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\validation.py", line 2787, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- productivity_score
+
+2026-03-13 21:52:47 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features']
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:52:47 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:52:47 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:52:47 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: Pipeline completado en 0.01s
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:52:47 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:52:47 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features', 'train']
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'linear_regression': R²=0.0827, RMSE=21.6601, MAE=18.5509
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'random_forest': R²=-0.1388, RMSE=24.1331, MAE=21.3019
+2026-03-13 21:52:47 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0827
+2026-03-13 21:52:47 [INFO] pipeline: Top 3 features: ['study_sleep_ratio', 'digital_distraction_index', 'sleep_hours']
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: Pipeline completado en 0.01s
+2026-03-13 21:52:47 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features', 'train', 'export']
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:52:47 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:52:47 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:52:47 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'linear_regression': R²=0.0572, RMSE=1.1612, MAE=1.0083
+2026-03-13 21:52:47 [INFO] pipeline: Modelo 'random_forest': R²=-0.2566, RMSE=1.3406, MAE=1.1790
+2026-03-13 21:52:47 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0572
+2026-03-13 21:52:47 [INFO] pipeline: Top 3 features: ['sleep_hours', 'phone_usage_hours', 'youtube_hours']
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: === Iniciando etapa: export ===
+2026-03-13 21:52:47 [INFO] pipeline: Dataset exportado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-11\test_run_pipeline_export_creat0\processed_data.csv (SHA256: 4e14dc3b9f16500f...)
+2026-03-13 21:52:47 [INFO] pipeline: Resultados exportados: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-11\test_run_pipeline_export_creat0\results.json
+2026-03-13 21:52:47 [INFO] pipeline: === Etapa 'export' completada en 0.01s ===
+2026-03-13 21:52:47 [INFO] pipeline: Pipeline completado en 0.03s
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:53:18 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:53:18 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: correlation ===
+2026-03-13 21:53:18 [INFO] pipeline: Matriz de correlación calculada (pearson): (12, 12)
+2026-03-13 21:53:18 [INFO] pipeline: Correlaciones significativas con 'productivity_score': 2
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'correlation' completada en 0.00s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:53:18 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:53:18 [INFO] pipeline: Modelo 'linear_regression': R²=0.0034, RMSE=22.5760, MAE=19.7468
+2026-03-13 21:53:18 [INFO] pipeline: Modelo 'random_forest': R²=-0.1328, RMSE=24.0693, MAE=21.1405
+2026-03-13 21:53:18 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0034
+2026-03-13 21:53:18 [INFO] pipeline: Top 3 features: ['sleep_hours', 'youtube_hours', 'gaming_hours']
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:53:18 [INFO] pipeline: Modelo 'linear_regression': R²=0.0034, RMSE=22.5760, MAE=19.7468
+2026-03-13 21:53:18 [INFO] pipeline: Modelo 'random_forest': R²=-0.1328, RMSE=24.0693, MAE=21.1405
+2026-03-13 21:53:18 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0034
+2026-03-13 21:53:18 [INFO] pipeline: Top 3 features: ['sleep_hours', 'youtube_hours', 'gaming_hours']
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: recommend ===
+2026-03-13 21:53:18 [INFO] pipeline: Recomendaciones generadas: 3
+2026-03-13 21:53:18 [INFO] pipeline:   Rec 1 [sleep_hours]: Aumenta tus horas de sueño a al menos 7.0 horas por noche. Dormir 4.5 h es insuf...
+2026-03-13 21:53:18 [INFO] pipeline:   Rec 2 [phone_usage_hours]: Reduce el uso del teléfono a menos de 3.0 h/día. Actualmente usas el teléfono 6....
+2026-03-13 21:53:18 [INFO] pipeline:   Rec 3 [social_media_hours]: Limita el uso de redes sociales a 2.0 h/día. Actualmente dedicas 4.6 h/día, lo q...
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'recommend' completada en 0.01s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:53:18 [INFO] pipeline: Modelo 'linear_regression': R²=0.0034, RMSE=22.5760, MAE=19.7468
+2026-03-13 21:53:18 [INFO] pipeline: Modelo 'random_forest': R²=-0.1328, RMSE=24.0693, MAE=21.1405
+2026-03-13 21:53:18 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0034
+2026-03-13 21:53:18 [INFO] pipeline: Top 3 features: ['sleep_hours', 'youtube_hours', 'gaming_hours']
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: export ===
+2026-03-13 21:53:18 [INFO] pipeline: Dataset exportado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-12\test_stage_export0\processed_data.csv (SHA256: ec792f7bb1158c84...)
+2026-03-13 21:53:18 [INFO] pipeline: Resultados exportados: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-12\test_stage_export0\results.json
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'export' completada en 0.01s ===
+2026-03-13 21:53:18 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features', 'correlation', 'train', 'recommend', 'visualize', 'export']
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:53:18 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:53:18 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:53:18 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: correlation ===
+2026-03-13 21:53:18 [INFO] pipeline: Matriz de correlación calculada (pearson): (16, 16)
+2026-03-13 21:53:18 [INFO] pipeline: Correlaciones significativas con 'productivity_score': 2
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'correlation' completada en 0.00s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:53:18 [INFO] pipeline: Modelo 'linear_regression': R²=0.0572, RMSE=1.1612, MAE=1.0083
+2026-03-13 21:53:18 [INFO] pipeline: Modelo 'random_forest': R²=-0.2566, RMSE=1.3406, MAE=1.1790
+2026-03-13 21:53:18 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0572
+2026-03-13 21:53:18 [INFO] pipeline: Top 3 features: ['sleep_hours', 'phone_usage_hours', 'youtube_hours']
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: recommend ===
+2026-03-13 21:53:18 [INFO] pipeline: Recomendaciones generadas: 3
+2026-03-13 21:53:18 [INFO] pipeline:   Rec 1 [exercise_minutes]: Aumenta tu actividad física a al menos 30 minutos diarios. Actualmente ejercitas...
+2026-03-13 21:53:18 [INFO] pipeline:   Rec 2 [sleep_hours]: Aumenta tus horas de sueño a al menos 7.0 horas por noche. Dormir -1.6 h es insu...
+2026-03-13 21:53:18 [INFO] pipeline:   Rec 3 [study_hours_per_day]: Incrementa tus horas de estudio diarias a al menos 6.0 horas. Actualmente estudi...
+2026-03-13 21:53:18 [INFO] pipeline: === Etapa 'recommend' completada en 0.00s ===
+2026-03-13 21:53:18 [INFO] pipeline: === Iniciando etapa: visualize ===
+2026-03-13 21:53:19 [INFO] pipeline: Heatmap de correlación guardado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-12\test_run_pipeline_all_stages0\correlation_matrix.png
+2026-03-13 21:53:19 [INFO] pipeline: Gráfico de importancia guardado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-12\test_run_pipeline_all_stages0\feature_importance.png
+2026-03-13 21:53:20 [INFO] pipeline: Dashboard guardado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-12\test_run_pipeline_all_stages0\dashboard.png
+2026-03-13 21:53:20 [INFO] pipeline: === Etapa 'visualize' completada en 1.23s ===
+2026-03-13 21:53:20 [INFO] pipeline: === Iniciando etapa: export ===
+2026-03-13 21:53:20 [INFO] pipeline: Dataset exportado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-12\test_run_pipeline_all_stages0\processed_data.csv (SHA256: 4e14dc3b9f16500f...)
+2026-03-13 21:53:20 [INFO] pipeline: Resultados exportados: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-12\test_run_pipeline_all_stages0\results.json
+2026-03-13 21:53:20 [INFO] pipeline: === Etapa 'export' completada en 0.01s ===
+2026-03-13 21:53:20 [INFO] pipeline: Pipeline completado en 1.49s
+2026-03-13 21:53:20 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features']
+2026-03-13 21:53:20 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:53:20 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:53:20 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:53:20 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:53:20 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:53:20 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:53:20 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:53:20 [INFO] pipeline: Pipeline completado en 0.01s
+2026-03-13 21:53:20 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:53:20 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:53:20 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:53:20 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:53:20 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features', 'train']
+2026-03-13 21:53:20 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:53:20 [INFO] pipeline: Modelo 'linear_regression': R²=0.0827, RMSE=21.6601, MAE=18.5509
+2026-03-13 21:53:20 [INFO] pipeline: Modelo 'random_forest': R²=-0.1388, RMSE=24.1331, MAE=21.3019
+2026-03-13 21:53:20 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0827
+2026-03-13 21:53:20 [INFO] pipeline: Top 3 features: ['study_sleep_ratio', 'digital_distraction_index', 'sleep_hours']
+2026-03-13 21:53:20 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:53:20 [INFO] pipeline: Pipeline completado en 0.01s
+2026-03-13 21:53:20 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features', 'train', 'export']
+2026-03-13 21:53:20 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:53:20 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:53:20 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:53:20 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:53:20 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:53:20 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:53:20 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:53:20 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:53:20 [INFO] pipeline: Modelo 'linear_regression': R²=0.0572, RMSE=1.1612, MAE=1.0083
+2026-03-13 21:53:20 [INFO] pipeline: Modelo 'random_forest': R²=-0.2566, RMSE=1.3406, MAE=1.1790
+2026-03-13 21:53:20 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0572
+2026-03-13 21:53:20 [INFO] pipeline: Top 3 features: ['sleep_hours', 'phone_usage_hours', 'youtube_hours']
+2026-03-13 21:53:20 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:53:20 [INFO] pipeline: === Iniciando etapa: export ===
+2026-03-13 21:53:20 [INFO] pipeline: Dataset exportado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-12\test_run_pipeline_export_creat0\processed_data.csv (SHA256: 4e14dc3b9f16500f...)
+2026-03-13 21:53:20 [INFO] pipeline: Resultados exportados: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-12\test_run_pipeline_export_creat0\results.json
+2026-03-13 21:53:20 [INFO] pipeline: === Etapa 'export' completada en 0.01s ===
+2026-03-13 21:53:20 [INFO] pipeline: Pipeline completado en 0.03s
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:55:56 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:55:56 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: correlation ===
+2026-03-13 21:55:56 [INFO] pipeline: Matriz de correlación calculada (pearson): (12, 12)
+2026-03-13 21:55:56 [INFO] pipeline: Correlaciones significativas con 'productivity_score': 2
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'correlation' completada en 0.00s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:55:56 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:55:56 [INFO] pipeline: Modelo 'linear_regression': R²=0.0034, RMSE=22.5760, MAE=19.7468
+2026-03-13 21:55:56 [INFO] pipeline: Modelo 'random_forest': R²=-0.1328, RMSE=24.0693, MAE=21.1405
+2026-03-13 21:55:56 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0034
+2026-03-13 21:55:56 [INFO] pipeline: Top 3 features: ['sleep_hours', 'youtube_hours', 'gaming_hours']
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:55:56 [INFO] pipeline: Modelo 'linear_regression': R²=0.0034, RMSE=22.5760, MAE=19.7468
+2026-03-13 21:55:56 [INFO] pipeline: Modelo 'random_forest': R²=-0.1328, RMSE=24.0693, MAE=21.1405
+2026-03-13 21:55:56 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0034
+2026-03-13 21:55:56 [INFO] pipeline: Top 3 features: ['sleep_hours', 'youtube_hours', 'gaming_hours']
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: recommend ===
+2026-03-13 21:55:56 [INFO] pipeline: Recomendaciones generadas: 3
+2026-03-13 21:55:56 [INFO] pipeline:   Rec 1 [sleep_hours]: Aumenta tus horas de sueño a al menos 7.0 horas por noche. Dormir 4.5 h es insuf...
+2026-03-13 21:55:56 [INFO] pipeline:   Rec 2 [phone_usage_hours]: Reduce el uso del teléfono a menos de 3.0 h/día. Actualmente usas el teléfono 6....
+2026-03-13 21:55:56 [INFO] pipeline:   Rec 3 [social_media_hours]: Limita el uso de redes sociales a 2.0 h/día. Actualmente dedicas 4.6 h/día, lo q...
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'recommend' completada en 0.00s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:55:56 [INFO] pipeline: Modelo 'linear_regression': R²=0.0034, RMSE=22.5760, MAE=19.7468
+2026-03-13 21:55:56 [INFO] pipeline: Modelo 'random_forest': R²=-0.1328, RMSE=24.0693, MAE=21.1405
+2026-03-13 21:55:56 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0034
+2026-03-13 21:55:56 [INFO] pipeline: Top 3 features: ['sleep_hours', 'youtube_hours', 'gaming_hours']
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: export ===
+2026-03-13 21:55:56 [INFO] pipeline: Dataset exportado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-13\test_stage_export0\processed_data.csv (SHA256: ec792f7bb1158c84...)
+2026-03-13 21:55:56 [INFO] pipeline: Resultados exportados: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-13\test_stage_export0\results.json
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'export' completada en 0.01s ===
+2026-03-13 21:55:56 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features', 'correlation', 'train', 'recommend', 'visualize', 'export']
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:55:56 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:55:56 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:55:56 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: correlation ===
+2026-03-13 21:55:56 [INFO] pipeline: Matriz de correlación calculada (pearson): (16, 16)
+2026-03-13 21:55:56 [INFO] pipeline: Correlaciones significativas con 'productivity_score': 2
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'correlation' completada en 0.00s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:55:56 [INFO] pipeline: Modelo 'linear_regression': R²=0.0572, RMSE=1.1612, MAE=1.0083
+2026-03-13 21:55:56 [INFO] pipeline: Modelo 'random_forest': R²=-0.2566, RMSE=1.3406, MAE=1.1790
+2026-03-13 21:55:56 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0572
+2026-03-13 21:55:56 [INFO] pipeline: Top 3 features: ['sleep_hours', 'phone_usage_hours', 'youtube_hours']
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: recommend ===
+2026-03-13 21:55:56 [INFO] pipeline: Recomendaciones generadas: 3
+2026-03-13 21:55:56 [INFO] pipeline:   Rec 1 [exercise_minutes]: Aumenta tu actividad física a al menos 30 minutos diarios. Actualmente ejercitas...
+2026-03-13 21:55:56 [INFO] pipeline:   Rec 2 [sleep_hours]: Aumenta tus horas de sueño a al menos 7.0 horas por noche. Dormir -1.6 h es insu...
+2026-03-13 21:55:56 [INFO] pipeline:   Rec 3 [study_hours_per_day]: Incrementa tus horas de estudio diarias a al menos 6.0 horas. Actualmente estudi...
+2026-03-13 21:55:56 [INFO] pipeline: === Etapa 'recommend' completada en 0.00s ===
+2026-03-13 21:55:56 [INFO] pipeline: === Iniciando etapa: visualize ===
+2026-03-13 21:55:57 [INFO] pipeline: Heatmap de correlación guardado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-13\test_run_pipeline_all_stages0\correlation_matrix.png
+2026-03-13 21:55:57 [INFO] pipeline: Gráfico de importancia guardado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-13\test_run_pipeline_all_stages0\feature_importance.png
+2026-03-13 21:55:57 [INFO] pipeline: Dashboard guardado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-13\test_run_pipeline_all_stages0\dashboard.png
+2026-03-13 21:55:57 [INFO] pipeline: === Etapa 'visualize' completada en 1.27s ===
+2026-03-13 21:55:57 [INFO] pipeline: === Iniciando etapa: export ===
+2026-03-13 21:55:57 [INFO] pipeline: Dataset exportado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-13\test_run_pipeline_all_stages0\processed_data.csv (SHA256: 4e14dc3b9f16500f...)
+2026-03-13 21:55:58 [INFO] pipeline: Resultados exportados: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-13\test_run_pipeline_all_stages0\results.json
+2026-03-13 21:55:58 [INFO] pipeline: === Etapa 'export' completada en 0.02s ===
+2026-03-13 21:55:58 [INFO] pipeline: Pipeline completado en 1.31s
+2026-03-13 21:55:58 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features']
+2026-03-13 21:55:58 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:55:58 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:55:58 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:55:58 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:55:58 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:55:58 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:55:58 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:55:58 [INFO] pipeline: Pipeline completado en 0.01s
+2026-03-13 21:55:58 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:55:58 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:55:58 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:55:58 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:55:58 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features', 'train']
+2026-03-13 21:55:58 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:55:58 [INFO] pipeline: Modelo 'linear_regression': R²=0.0827, RMSE=21.6601, MAE=18.5509
+2026-03-13 21:55:58 [INFO] pipeline: Modelo 'random_forest': R²=-0.1388, RMSE=24.1331, MAE=21.3019
+2026-03-13 21:55:58 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0827
+2026-03-13 21:55:58 [INFO] pipeline: Top 3 features: ['study_sleep_ratio', 'digital_distraction_index', 'sleep_hours']
+2026-03-13 21:55:58 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:55:58 [INFO] pipeline: Pipeline completado en 0.01s
+2026-03-13 21:55:58 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features', 'train', 'export']
+2026-03-13 21:55:58 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-13 21:55:58 [INFO] pipeline: Preprocesamiento completado: (80, 12)
+2026-03-13 21:55:58 [INFO] pipeline: === Etapa 'preprocess' completada en 0.00s ===
+2026-03-13 21:55:58 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-13 21:55:58 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-13 21:55:58 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-13 21:55:58 [INFO] pipeline: === Etapa 'features' completada en 0.01s ===
+2026-03-13 21:55:58 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-13 21:55:58 [INFO] pipeline: Modelo 'linear_regression': R²=0.0572, RMSE=1.1612, MAE=1.0083
+2026-03-13 21:55:58 [INFO] pipeline: Modelo 'random_forest': R²=-0.2566, RMSE=1.3406, MAE=1.1790
+2026-03-13 21:55:58 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=0.0572
+2026-03-13 21:55:58 [INFO] pipeline: Top 3 features: ['sleep_hours', 'phone_usage_hours', 'youtube_hours']
+2026-03-13 21:55:58 [INFO] pipeline: === Etapa 'train' completada en 0.01s ===
+2026-03-13 21:55:58 [INFO] pipeline: === Iniciando etapa: export ===
+2026-03-13 21:55:58 [INFO] pipeline: Dataset exportado: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-13\test_run_pipeline_export_creat0\processed_data.csv (SHA256: 4e14dc3b9f16500f...)
+2026-03-13 21:55:58 [INFO] pipeline: Resultados exportados: C:\Users\alexa\AppData\Local\Temp\pytest-of-alexa\pytest-13\test_run_pipeline_export_creat0\results.json
+2026-03-13 21:55:58 [INFO] pipeline: === Etapa 'export' completada en 0.01s ===
+2026-03-13 21:55:58 [INFO] pipeline: Pipeline completado en 0.03s
+2026-03-16 19:30:40 [INFO] pipeline: Pipeline iniciado. Etapas: ['data', 'preprocess', 'features', 'correlation', 'train', 'recommend', 'visualize', 'export']
+2026-03-16 19:30:40 [INFO] pipeline: === Iniciando etapa: data ===
+2026-03-16 19:30:40 [INFO] pipeline: Datos cargados: 20000 filas, 18 columnas
+2026-03-16 19:30:40 [INFO] pipeline: Esquema validado correctamente
+2026-03-16 19:30:40 [INFO] pipeline: Calidad de datos — duplicados: 0, filas totales: 20000
+2026-03-16 19:30:40 [INFO] pipeline: === Etapa 'data' completada en 0.04s ===
+2026-03-16 19:30:41 [INFO] pipeline: === Iniciando etapa: preprocess ===
+2026-03-16 19:30:41 [INFO] pipeline: Preprocesamiento completado: (20000, 20)
+2026-03-16 19:30:41 [INFO] pipeline: === Etapa 'preprocess' completada en 0.02s ===
+2026-03-16 19:30:41 [INFO] pipeline: === Iniciando etapa: features ===
+2026-03-16 19:30:41 [INFO] pipeline: Features derivadas creadas: ['digital_distraction_index', 'screen_to_study_ratio', 'study_sleep_ratio', 'total_screen_time']
+2026-03-16 19:30:41 [INFO] pipeline: Outliers manejados con estrategia 'clip'
+2026-03-16 19:30:41 [INFO] pipeline: === Etapa 'features' completada en 0.02s ===
+2026-03-16 19:30:41 [INFO] pipeline: === Iniciando etapa: correlation ===
+2026-03-16 19:30:41 [INFO] pipeline: Matriz de correlación calculada (pearson): (24, 24)
+2026-03-16 19:30:41 [INFO] pipeline: Correlaciones significativas con 'productivity_score': 7
+2026-03-16 19:30:41 [INFO] pipeline: === Etapa 'correlation' completada en 0.02s ===
+2026-03-16 19:30:41 [INFO] pipeline: === Iniciando etapa: train ===
+2026-03-16 19:30:41 [INFO] pipeline: Modelo 'linear_regression': R²=1.0000, RMSE=0.0002, MAE=0.0002
+2026-03-16 19:30:50 [INFO] pipeline: Modelo 'random_forest': R²=0.9632, RMSE=0.1912, MAE=0.1522
+2026-03-16 19:30:57 [INFO] pipeline: Modelo 'gradient_boosting': R²=0.9947, RMSE=0.0724, MAE=0.0575
+2026-03-16 19:30:57 [INFO] pipeline: Mejor modelo: 'linear_regression' con R²=1.0000
+2026-03-16 19:30:57 [INFO] pipeline: Top 3 features: ['study_hours_per_day', 'focus_score', 'sleep_hours']
+2026-03-16 19:30:57 [INFO] pipeline: === Etapa 'train' completada en 16.02s ===
+2026-03-16 19:30:57 [INFO] pipeline: === Iniciando etapa: recommend ===
+2026-03-16 19:30:57 [INFO] pipeline: Recomendaciones generadas: 3
+2026-03-16 19:30:57 [INFO] pipeline:   Rec 1 [study_hours_per_day]: Incrementa tus horas de estudio diarias a al menos 6.0 horas. Actualmente estudi...
+2026-03-16 19:30:57 [INFO] pipeline:   Rec 2 [sleep_hours]: Aumenta tus horas de sueño a al menos 7.0 horas por noche. Dormir -1.4 h es insu...
+2026-03-16 19:30:57 [INFO] pipeline:   Rec 3 [phone_usage_hours]: Tu uso del teléfono (-0.9 h/día) está dentro del rango óptimo.
+2026-03-16 19:30:57 [INFO] pipeline: === Etapa 'recommend' completada en 0.00s ===
+2026-03-16 19:30:58 [INFO] pipeline: === Iniciando etapa: visualize ===
+2026-03-16 19:30:59 [INFO] pipeline: Heatmap de correlación guardado: data\processed\correlation_matrix.png
+2026-03-16 19:30:59 [INFO] pipeline: Gráfico de importancia guardado: data\processed\feature_importance.png
+2026-03-16 19:31:00 [INFO] pipeline: Dashboard guardado: data\processed\dashboard.png
+2026-03-16 19:31:00 [INFO] pipeline: === Etapa 'visualize' completada en 1.99s ===
+2026-03-16 19:31:00 [INFO] pipeline: === Iniciando etapa: export ===
+2026-03-16 19:31:00 [INFO] pipeline: Dataset exportado: data\processed\processed_data.csv (SHA256: 93f4b316a734517e...)
+2026-03-16 19:31:00 [INFO] pipeline: Resultados exportados: data\processed\results.json
+2026-03-16 19:31:00 [INFO] pipeline: === Etapa 'export' completada en 0.31s ===
+2026-03-16 19:31:00 [INFO] pipeline: Pipeline completado en 20.63s

@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "date": "2026-03-16T19:31:00.831779",
+    "version": "1.0.0",
+    "config": {
+      "name": "student-performance-analysis",
+      "version": "1.0.0",
+      "description": "An\u00e1lisis de rendimiento estudiantil y h\u00e1bitos digitales"
+    }
+  },
+  "results": {
+    "model_metrics": {
+      "rmse": 0.0002174755027199359,
+      "mae": 0.00018038172542104728,
+      "r_squared": 0.9999999523919414,
+      "is_production_candidate": true
+    },
+    "n_recommendations": 3
+  }
+}
